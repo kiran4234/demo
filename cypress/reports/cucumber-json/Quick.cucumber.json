@@ -1,0 +1,205 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login to website",
+    "line": 2,
+    "id": "login-to-website",
+    "tags": [
+      {
+        "name": "@Login",
+        "line": 1
+      }
+    ],
+    "uri": "Quick.feature",
+    "elements": [
+      {
+        "id": "login-to-website;login-to-website-with-correct-username-and-invalid-password",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login to website with correct username and invalid password",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 1
+          },
+          {
+            "name": "@invalidLogin",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I logins to \"Swags\" application",
+            "result": {
+              "status": "passed",
+              "duration": 6647000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify error message on application",
+            "result": {
+              "status": "passed",
+              "duration": 2069000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-to-website;login-to-website-with-correct-username-and-valid-password",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Login to website with correct username and valid password",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 1
+          },
+          {
+            "name": "@Checkout",
+            "line": 24
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I login to \"Swag\" application",
+            "result": {
+              "status": "passed",
+              "duration": 5863000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I Add the first listed product to cart",
+            "result": {
+              "status": "passed",
+              "duration": 170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I Add the last listed product to cart",
+            "result": {
+              "status": "passed",
+              "duration": 110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I click on cart to view product description",
+            "result": {
+              "status": "passed",
+              "duration": 111000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "I Verify both product description on cart page",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I Verify both product price on cart page",
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I checkout via cart page",
+            "result": {
+              "status": "passed",
+              "duration": 119000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I verify checkout page",
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I Fill all required information",
+            "result": {
+              "status": "passed",
+              "duration": 1509000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I Complete checkout",
+            "result": {
+              "status": "passed",
+              "duration": 1223000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "I Verify checkout is completed",
+            "result": {
+              "status": "passed",
+              "duration": 164000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I click on continue button",
+            "result": {
+              "status": "passed",
+              "duration": 162000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I Verify order dispatched message",
+            "result": {
+              "status": "passed",
+              "duration": 145000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

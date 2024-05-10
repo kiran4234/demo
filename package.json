@@ -1,0 +1,32 @@
+{
+  "name": "classroomdemo",
+  "version": "1.0.0",
+  "description": "this is classroom demo project",
+  "main": "index.js",
+  "scripts": {
+    "test:open": "cypress open",
+    "clean:reports": "if exist cypress\\reports rmdir /S/Q cypress\\reports",
+    "posttest": "node cucumber-html-report.js",
+    "test": "npm run scripts || npm run posttest"
+  },
+  "author": "kiran",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.9.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/e2e/stepdefs/**/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber-json",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1"
+  }
+}
+
+
